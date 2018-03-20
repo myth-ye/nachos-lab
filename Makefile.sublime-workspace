@@ -1,0 +1,230 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 217.0,
+		"last_filter": "instal",
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"markdown",
+				"Set Syntax: Markdown"
+			],
+			[
+				"conver",
+				"ConvertToUTF8: Reload with Encoding"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 554.0
+	},
+	"console":
+	{
+		"height": 165.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/myth/CodeSpace/codeblocks/code/threads/list.cc",
+		"/home/myth/CodeSpace/codeblocks/code/threads/list.h",
+		"/home/myth/CodeSpace/codeblocks/code/threads/main.cc",
+		"/home/myth/CodeSpace/codeblocks/code/threads/dllist.cc",
+		"/run/user/1000/gvfs/smb-share:server=192.168.1.219,share=blog/ubuntu-useage.md",
+		"/run/user/1000/gvfs/smb-share:server=192.168.1.219,share=note/mkdocs.yml",
+		"/home/myth/meng.li/source/_posts/prim.md",
+		"/home/myth/下载/notes/docs/apue/index.md",
+		"/home/myth/下载/notes/mkdocs.yml",
+		"/home/myth/notes/mkdocs.yml",
+		"/home/myth/下载/dv2-4(1).py",
+		"/home/myth/CodeSpace/Flappybird/flappy-bird-server/src/config/index.ts",
+		"/home/myth/CodeSpace/Flappybird/flappy-bird-server/src/bootstrap/socket-io-wrapper.ts",
+		"/home/myth/CodeSpace/Flappybird/flappy-bird-server/src/bootstrap/application-wrapper.ts",
+		"/home/myth/CodeSpace/Flappybird/flappy-bird-server/src/api/players/controller.ts",
+		"/home/myth/CodeSpace/Flappybird/flappy-bird-server/src/api/players/index.ts",
+		"/home/myth/CodeSpace/Flappybird/flappy-bird-server/src/api/stage/controller.ts",
+		"/home/myth/下载/hexo-theme-indigo-1.7.0/layout/_partial/plugins/valine.ejs",
+		"/home/myth/CodeSpace/Flappybird/bak/flappy-bird/index.html",
+		"/home/myth/notes/docs/about.md",
+		"/home/myth/.ssh/id_rsa.pub",
+		"/home/myth/notes/mkdocs-material/material/assets/javascripts/application.js",
+		"/home/myth/notes/mkdocs-material/material/assets/javascripts/lunr/lunr.stemmer.support.js",
+		"/home/myth/notes/mkdocs-material/material/assets/javascripts/lunr/lunr.jp.js",
+		"/home/myth/notes/mkdocs-material/material/assets/javascripts/lunr/lunr.zh.js",
+		"/home/myth/notes/mkdocs-material/material/assets/javascripts/lunr/lunr.multi.js",
+		"/home/myth/下载/notes/requirements.txt",
+		"/home/myth/下载/notes/custom_theme/base.html",
+		"/home/myth/下载/notes/custom_theme/nav.html",
+		"/home/myth/Notes/mkdocs.yml",
+		"/home/myth/notes/mkdocs-material/material/assets/javascripts/modernizr.js",
+		"/home/myth/Notes/mkdocs-bootswatch/mkdocs.yml",
+		"/home/myth/下载/mkdocs-bootstrap-master/mkdocs.yml",
+		"/home/myth/下载/mkdocs-bootstrap-master/setup.py",
+		"/home/myth/Notes/docs/about.md",
+		"/home/myth/Notes/mkdocs-material/material/mkdocs_theme.yml",
+		"/home/myth/Notes/mkdocs-material/material/assets/javascripts/lunr/tinyseg.js",
+		"/home/myth/Notes/mkdocs-material/material/assets/javascripts/lunr/lunr.es.js",
+		"/home/myth/Note/mkdocs.yml",
+		"/run/user/1000/gvfs/sftp:host=cs8.xmu.edu.cn/home/cs15/cs153536/homework/2/2.c",
+		"/home/myth/下载/上海图书馆馆藏标准数据库-题录.html",
+		"/home/myth/下载/pythonapplication/ch14/csvex.py",
+		"/run/user/1000/gvfs/sftp:host=cs8.xmu.edu.cn/home/cs15/cs153536/homework/2/ftw4.c",
+		"/home/myth/CodeSpace/APUE/1/timewrite.c",
+		"/home/myth/下载/display.cgi?",
+		"/home/myth/下载/guake-master/dev.sh"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 51.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Makefile.sublime-project",
+	"replace":
+	{
+		"height": 65.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 321.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
