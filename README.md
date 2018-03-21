@@ -4,7 +4,7 @@
 
 usage : ./nachos -q <threadNum> -N <itemNum> -E <errorNum> -d t
 
-<errorNum>
+errorNum meanings
 
 1. 在往空链表添加第一个元素时Yield。last指针没有正确添加，last指针为NULL 造成segment fault。
 2. 更新链表最小元素时Yield。
