@@ -10,7 +10,7 @@ void addNRandom(int n,DLList *l)
     {
         int sortKey = randomArray[i];
         void *itemPtr = (void*)new int(sortKey);
-        printf("add new item to DLList key %d\n",sortKey);
+        DEBUG('t',"add new item to DLList key %d\n",sortKey);
 
         l->SortedInsert(itemPtr,sortKey);
     }
@@ -19,13 +19,13 @@ void addNRandom(int n,DLList *l)
 
 void removeNitem(int n,DLList *l)
 {
-    printf("start removeNitem\n");
+    DEBUG('t',"Start removeNitem\n");
 
     for(int i=0;i<n;i++)
     {
-        printf("i = %d\n",i);
+        DEBUG('t',"i = %d\n",i);
         l->Remove(NULL);
     }
 
-    printf("removeNitem finish!\n");
+    DEBUG('t',"removeNitem finish!\n");
 }

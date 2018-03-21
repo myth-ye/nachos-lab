@@ -124,13 +124,13 @@ void *DLList::Remove(int *keyPtr)
     delete e;
 
             //DEBUG
-    printf("Remove head finish, DLList: ");
+    DEBUG('t',"Remove head finish, DLList: ");
     for(DLLElement *tmp = first;
             tmp != NULL;tmp = tmp->next)
     {
-        printf("%d ",tmp->key);
+        DEBUG('t',"%d ",tmp->key);
     }
-    printf("\n");
+    DEBUG('t',"\n");
 
 
     return itemPtr;
@@ -183,13 +183,13 @@ void DLList::SortedInsert(void *item, int sortKey)
 
     }
     //DEBUG
-    printf("SortedInsert finish, DLList: ");
+    DEBUG('t',"SortedInsert finish, DLList: ");
     for(DLLElement *tmp = first;
             tmp != NULL;tmp = tmp->next)
     {
-        printf("%d ",tmp->key);
+        DEBUG('t',"%d ",tmp->key);
     }
-    printf("\n");
+    DEBUG('t',"\n");
 }
 
 void *DLList::SortedRemove(int sortKey)

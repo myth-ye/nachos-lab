@@ -102,7 +102,7 @@ main(int argc, char **argv)
     }
 
     DLList *test = new DLList;
-    printf("start test\n");
+    DEBUG('t',"start test\n");
     addNRandom(10,test);
     removeNitem(10,test);
 
