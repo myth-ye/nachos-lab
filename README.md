@@ -2,7 +2,7 @@
 
 ## lab1
 
-usage : ./nachos -q <threadNum> -N <itemNum> -E <errorNum> -d t
+usage : ./nachos -q [threadNum] -N [itemNum] -E [errorNum] -d t
 
 errorNum meanings
 
