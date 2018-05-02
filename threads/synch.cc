@@ -151,9 +151,45 @@ void Lock::Release()
 
 Condition::Condition(char* debugName)
 {
+    name = debugName;
+    queue = new List;
+}
+Condition::~Condition()
+{
+    delete queue;
+}
+void Condition::Wait(Lock* conditionLock)
+{
+     ASSERT(conditionLock->isHeldByCurrentThread());
+     //if lock is not hold by current thread crash
+    IntStatus oldLevel = interrupt->SetLevel(IntOff);	// disable interrupts
+
+   	conditionLock->Release();
+
+	queue->Append((void *)currentThread);
+	currentThread->Sleep();
+
+	conditionLock->Acquire();
+
+
+    (void) interrupt->SetLevel(oldLevel);	// re-enable interrupts
+}
+void Condition::Signal(Lock* conditionLock)
+{
+   	IntStatus oldLevel = interrupt->SetLevel(IntOff);	// disable interrupts
+	Thread * nextRun = (Thread *)queue->Remove();
+	if(nextRun)
+		scheduler->ReadyToRun(nextRun);
+	(void) interrupt->SetLevel(oldLevel);	// re-enable interrupts
 
 }
-Condition::~Condition() { }
-void Condition::Wait(Lock* conditionLock) { ASSERT(FALSE); }
-void Condition::Signal(Lock* conditionLock) { }
-void Condition::Broadcast(Lock* conditionLock) { }
+void Condition::Broadcast(Lock* conditionLock)
+{
+   	IntStatus oldLevel = interrupt->SetLevel(IntOff);	// disable interrupts
+	while(!queue->IsEmpty()){
+		Thread * thread = (Thread *)queue->Remove();
+		if(thread)
+			scheduler->ReadyToRun(thread);
+	}
+	(void) interrupt->SetLevel(oldLevel);	// re-enable interrupts
+}
