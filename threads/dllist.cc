@@ -18,13 +18,16 @@ DLList::DLList()
 {
     first = NULL;
     last = NULL;
+    lock = new Lock("dllist_Lock");
 }
 
 DLList::~DLList()
 {
+    lock->Acquire();
     while(!IsEmpty())
         Remove(NULL);
-
+    lock->Release();
+    delete lock;
 }
 
 bool DLList::IsEmpty()
@@ -37,7 +40,7 @@ bool DLList::IsEmpty()
 
 void DLList::Prepend(void *item)
 {
-
+    lock->Acquire();
     if(IsEmpty())
     {
         DLLElement *e = new DLLElement(item,1);
@@ -51,10 +54,11 @@ void DLList::Prepend(void *item)
         first->prev = e;
         first = e;
     }
-
+    lock->Release();
 }
 void DLList::Append(void *item)
 {
+    lock->Acquire();
     if(IsEmpty())
     {
         DLLElement *e = new DLLElement(item,1);
@@ -68,36 +72,12 @@ void DLList::Append(void *item)
         last->next = e;
         last = e;
     }
-
+    lock->Release();
 }
 
 void *DLList::Remove(int *keyPtr)
 {
-    /* 垃圾英语不可原谅
-
-    DLLElement *e = first;
-
-    // find where key element is
-    while(e != last)
-    {
-        if(e->key != *keyPtr)
-            e = e->next;
-    }
-
-    //execute remove
-    if(e == NULL)
-        return NULL;
-    else
-    {
-        e->prev->next = e->next;
-        e->next->prev = e->prev;
-        *keyPtr = e->key;
-        void *thing = e->item;
-        delete e;
-        return item;
-    }
-    */
-
+    lock->Acquire();
     DLLElement *e = first;
     void *itemPtr = NULL;
 
@@ -129,7 +109,7 @@ void *DLList::Remove(int *keyPtr)
 
     delete e;
 
-            //DEBUG
+    //DEBUG
     DEBUG('t',"Remove head finish, DLList: ");
     for(DLLElement *tmp = first;
             tmp != NULL;tmp = tmp->next)
@@ -137,12 +117,13 @@ void *DLList::Remove(int *keyPtr)
         DEBUG('t',"%d ",tmp->key);
     }
 
-
+    lock->Release();
     return itemPtr;
 }
 
 void DLList::SortedInsert(void *item, int sortKey)
 {
+    lock->Acquire();
     DLLElement *e = new DLLElement(item,sortKey);
 
     if(IsEmpty())
@@ -159,7 +140,7 @@ void DLList::SortedInsert(void *item, int sortKey)
     {
         e->next = first;
         first->prev = e;
-        if(errorNum==2)
+       if(errorNum==2)
         {
             DEBUG('t',"Yield caused by error 2\n");
             currentThread->Yield();
@@ -211,10 +192,12 @@ void DLList::SortedInsert(void *item, int sortKey)
         DEBUG('t',"%d ",tmp->key);
     }
     DEBUG('t',"\n");
+    lock->Release();
 }
 
 void *DLList::SortedRemove(int sortKey)
 {
+    lock->Acquire();
     DLLElement *e = first;
     void *itemPtr = NULL;
     while(e != NULL)
@@ -226,6 +209,6 @@ void *DLList::SortedRemove(int sortKey)
 
     if(e->key == sortKey)
         itemPtr = e->item;
-
+    lock->Release();
     return itemPtr;
 }

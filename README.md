@@ -13,13 +13,19 @@ errorNum meanings
 
 
 
-未解决bug：用指定的char指针创建
+未解决bug：用指定的char指针创建进程名
 
 
 
 参考：多线程生成随机数 http://blog.csdn.net/jfkidear/article/details/52854166
 
+## lab2
 
+一些坑
+
+1. 编译报错：Lock does not name a type。原来是dllist.h里没添加lock的头文件，编译器真蠢。
+
+    
 
 ## About
 

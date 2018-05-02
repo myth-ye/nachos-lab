@@ -1,5 +1,7 @@
 #include "copyright.h"
 #include "utility.h"
+#include "synch.h" // otherwise exist lock does not name a type
+
 
 class DLLElement
 {
@@ -26,6 +28,7 @@ class DLList
   private:
     DLLElement *first;
     DLLElement *last;
+    Lock *lock;
 };
 
 
