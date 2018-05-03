@@ -23,7 +23,7 @@ errorNum meanings
 
 usage : ./nachos -M [testMode]-q [threadNum] -N [itemNum] -E [errorNum]  t
 
-###参数解释
+### 参数解释
 
 - threadNum : 线程数量
 - itemNum : 添加item个数
