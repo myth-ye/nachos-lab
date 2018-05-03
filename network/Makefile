@@ -254,7 +254,8 @@ threadtest.o: ../threads/threadtest.cc /usr/include/stdc-predef.h \
  ../filesys/synchdisk.h ../machine/disk.h ../threads/synch.h \
  ../network/post.h ../machine/network.h ../threads/synchlist.h \
  ../threads/synch.h ../threads/dllist.h /usr/include/time.h \
- /usr/include/bits/time.h /usr/include/bits/timex.h
+ /usr/include/bits/time.h /usr/include/bits/timex.h \
+ ../threads/BoundedBuffer.h ../threads/Table.h
 interrupt.o: ../machine/interrupt.cc /usr/include/stdc-predef.h \
  ../threads/copyright.h ../machine/interrupt.h ../threads/list.h \
  ../threads/copyright.h ../threads/utility.h ../threads/bool.h \

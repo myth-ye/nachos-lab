@@ -21,11 +21,27 @@ errorNum meanings
 
 ## lab2
 
+usage : ./nachos -M [testMode]-q [threadNum] -N [itemNum] -E [errorNum]  t
+
+###参数解释
+
+- threadNum : 线程数量
+- itemNum : 添加item个数
+- errorNum : 错误种类
+- t : 线程模式下运行
+- testMode
+  - 1 : 多线程链表操作实验
+  - 2 : 生产者/消费者测试实验
+  - 3 : 线程表测试实验
+
+完成了实验附加题以外的部分。
+
+删除了DEBUG函数的使用，十分鸡肋并且有BUG，直接改用printf。
+
 一些坑
 
 1. 编译报错：Lock does not name a type。原来是dllist.h里没添加lock的头文件，编译器真蠢。
-
-    
+2. ASSERT((index >= 0) && (index < tsize)); 一开始边界测试index>0 第一个表项就读不出来吓坏了。 
 
 ## About
 

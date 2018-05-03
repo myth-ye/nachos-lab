@@ -652,35 +652,21 @@
 			<Option target="Debug" />
 			<Option target="Release" />
 		</Unit>
+		<Unit filename="../threads/BoundedBuffer.cc" />
+		<Unit filename="../threads/BoundedBuffer.h" />
 		<Unit filename="../threads/Makefile">
 			<Option target="Debug" />
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="../threads/bool.h">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="../threads/copyright.h">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
+		<Unit filename="../threads/Table.cc" />
+		<Unit filename="../threads/Table.h" />
+		<Unit filename="../threads/bool.h" />
+		<Unit filename="../threads/copyright.h" />
 		<Unit filename="../threads/dllist-driver.cc" />
-		<Unit filename="../threads/dllist.cc">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="../threads/dllist.h">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="../threads/helloworld.cc">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="../threads/helloworld.h">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
+		<Unit filename="../threads/dllist.cc" />
+		<Unit filename="../threads/dllist.h" />
+		<Unit filename="../threads/helloworld.cc" />
+		<Unit filename="../threads/helloworld.h" />
 		<Unit filename="../threads/helloworld.o">
 			<Option target="Debug" />
 			<Option target="Release" />
@@ -689,22 +675,13 @@
 			<Option target="Debug" />
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="../threads/list.cc">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="../threads/list.h">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
+		<Unit filename="../threads/list.cc" />
+		<Unit filename="../threads/list.h" />
 		<Unit filename="../threads/list.o">
 			<Option target="Debug" />
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="../threads/main.cc">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
+		<Unit filename="../threads/main.cc" />
 		<Unit filename="../threads/main.o">
 			<Option target="Debug" />
 			<Option target="Release" />
@@ -713,14 +690,8 @@
 			<Option target="Debug" />
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="../threads/scheduler.cc">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="../threads/scheduler.h">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
+		<Unit filename="../threads/scheduler.cc" />
+		<Unit filename="../threads/scheduler.h" />
 		<Unit filename="../threads/scheduler.o">
 			<Option target="Debug" />
 			<Option target="Release" />
@@ -729,59 +700,30 @@
 			<Option target="Debug" />
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="../threads/stdarg.h">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="../threads/switch-old.s">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
+		<Unit filename="../threads/stdarg.h" />
+		<Unit filename="../threads/switch-old.s" />
 		<Unit filename="../threads/switch.c">
 			<Option compilerVar="CC" />
-			<Option target="Debug" />
-			<Option target="Release" />
 		</Unit>
-		<Unit filename="../threads/switch.h">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
+		<Unit filename="../threads/switch.h" />
 		<Unit filename="../threads/switch.o">
 			<Option target="Debug" />
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="../threads/switch.s">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="../threads/swtch.s">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="../threads/synch.cc">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
+		<Unit filename="../threads/switch.s" />
+		<Unit filename="../threads/swtch.s" />
+		<Unit filename="../threads/synch.cc" />
 		<Unit filename="../threads/synch.dis">
 			<Option target="Debug" />
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="../threads/synch.h">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
+		<Unit filename="../threads/synch.h" />
 		<Unit filename="../threads/synch.o">
 			<Option target="Debug" />
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="../threads/synchlist.cc">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="../threads/synchlist.h">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
+		<Unit filename="../threads/synchlist.cc" />
+		<Unit filename="../threads/synchlist.h" />
 		<Unit filename="../threads/synchlist.o">
 			<Option target="Debug" />
 			<Option target="Release" />
@@ -790,34 +732,19 @@
 			<Option target="Debug" />
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="../threads/system.cc">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="../threads/system.h">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
+		<Unit filename="../threads/system.cc" />
+		<Unit filename="../threads/system.h" />
 		<Unit filename="../threads/system.o">
 			<Option target="Debug" />
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="../threads/thread.cc">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="../threads/thread.h">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
+		<Unit filename="../threads/thread.cc" />
+		<Unit filename="../threads/thread.h" />
 		<Unit filename="../threads/thread.o">
 			<Option target="Debug" />
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="../threads/threadtest.cc">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
+		<Unit filename="../threads/threadtest.cc" />
 		<Unit filename="../threads/threadtest.o">
 			<Option target="Debug" />
 			<Option target="Release" />
@@ -826,14 +753,8 @@
 			<Option target="Debug" />
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="../threads/utility.cc">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="../threads/utility.h">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
+		<Unit filename="../threads/utility.cc" />
+		<Unit filename="../threads/utility.h" />
 		<Unit filename="../threads/utility.o">
 			<Option target="Debug" />
 			<Option target="Release" />
