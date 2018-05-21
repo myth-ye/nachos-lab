@@ -169,10 +169,9 @@ void Condition::Wait(Lock* conditionLock)
 	queue->Append((void *)currentThread);
 	currentThread->Sleep();
 
-	conditionLock->Acquire();
-
-
     (void) interrupt->SetLevel(oldLevel);	// re-enable interrupts
+
+	conditionLock->Acquire();
 }
 void Condition::Signal(Lock* conditionLock)
 {
