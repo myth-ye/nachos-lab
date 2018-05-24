@@ -654,6 +654,9 @@
 		</Unit>
 		<Unit filename="../threads/BoundedBuffer.cc" />
 		<Unit filename="../threads/BoundedBuffer.h" />
+		<Unit filename="../threads/Elevator.h" />
+		<Unit filename="../threads/EventBarrier.cc" />
+		<Unit filename="../threads/EventBarrier.h" />
 		<Unit filename="../threads/Makefile">
 			<Option target="Debug" />
 			<Option target="Release" />
